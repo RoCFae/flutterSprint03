@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
+import '../../components/red_button.dart';
 import '../../components/side_bar.dart';
 import '../../models/vehicles.dart';
+import 'graphics_page.dart';
 
 class VehiclesInfo extends StatelessWidget {
   const VehiclesInfo({Key? key}) : super(key: key);
@@ -44,6 +46,17 @@ class VehiclesInfo extends StatelessWidget {
             ListTile(
               title: const Text('Placa'),
               subtitle: Text(vehicle.plate),
+            ),
+            StandardButton(
+              buttonText: "Ver gráficos",
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: ((context) => VehicleCharts()),
+                  ),
+                );
+              },
             ),
           ],
         ),

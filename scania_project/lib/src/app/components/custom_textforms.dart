@@ -21,6 +21,12 @@ class LoginTextForm extends StatelessWidget {
       controller: userInputController,
       style: const TextStyle(color: Colors.white),
       onEditingComplete: onEditingComplete,
+      validator: (value) {
+        if (value == null || value.isEmpty) {
+          return "INSIRA UM EMAIL PF";
+        }
+        return null;
+      },
       decoration: InputDecoration(
         label: Text(
           label,

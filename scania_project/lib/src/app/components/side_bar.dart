@@ -23,8 +23,6 @@ class NavBar extends StatelessWidget {
             ),
             decoration: BoxDecoration(
               color: Color.fromARGB(255, 15, 19, 60),
-              image: DecorationImage(
-                  fit: BoxFit.fill, image: AssetImage('images/teste.jpg')),
             ),
           ),
           ListTile(

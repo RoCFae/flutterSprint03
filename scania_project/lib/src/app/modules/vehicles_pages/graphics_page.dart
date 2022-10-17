@@ -20,7 +20,7 @@ class VehicleCharts extends StatelessWidget {
             const SizedBox(
               height: 10.0,
             ),
-            Image.asset('images/chart.png'),
+            Image.asset('assets/images/chart.png'),
           ],
         ),
       ),

@@ -13,7 +13,7 @@ class VehiclesListItem extends StatelessWidget {
       leading: const CircleAvatar(
         backgroundColor: Color.fromARGB(255, 184, 39, 7),
         child: Icon(
-          Icons.card_membership,
+          Icons.car_rental,
           size: 20,
           color: Colors.white,
         ),
