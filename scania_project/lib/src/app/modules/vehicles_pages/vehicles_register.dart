@@ -200,7 +200,7 @@ class _VehiclesFormPageState extends State<VehiclesFormPage> {
         if (value == null || value.isEmpty) {
           return 'Informe a descrição';
         }
-        if (value.length < 3 || value.length > 14) {
+        if (value.length < 2 || value.length > 24) {
           return 'A descrição deve ser entre 2 e 24 digítos';
         }
         return null;
